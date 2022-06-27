@@ -45,7 +45,7 @@ li {
 }
 
 .text--purple {
-    color:  #B85042;
+    color:  white;
 }
 
 section:nth-child(even) {
@@ -54,6 +54,10 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
     background-color: #A5D6A7 ;
+}
+
+.section__title {
+    margin-bottom: 20px;
 }
 
 /*NAVIGATION BAR*/
@@ -91,7 +95,7 @@ nav {
     background-color: #5d3eff;
 }
 
-.personal__logo{
+.personal__logo {
     font-size: 24px;
     color: #B85042;
     margin: 0 12px;
@@ -163,5 +167,54 @@ nav {
 
 .about-me__img {
     width: 100%;
-    padding: 150px 0;
+    padding: 64px 0;
 }
+
+/* TECH-STACK */
+
+.lang__img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms ease;
+}
+
+.lang:hover .lang__img {
+    transform: scale(0.9);
+    filter: brightness(80%);
+    opacity: 0.86;
+}
+
+.lang {
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.lang__img--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+}
+
+.lang__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.lang__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 400ms ease;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.lang:hover .lang__name {
+    transform: scale(1);
+    opacity: 1;
+}
+
