@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,29 +13,26 @@
 <body>
     <section id="aboutMe">
         <nav>
-            <div class="personal__logo">Sam Evans </div>
+            <div class="personal__logo">Sam Evans</div>
 
             <ul class="nav__link--list">
-                    <li>
-                        <a href="languages" class=
-                        "nav__link--anchor 
+                <li class="nav__link">
+                    <a href="#projects" class="nav__link--anchor 
                         link__hover-effect
                         link__hover-effect--black">
-                    Projects</a>
-                    </li>
-                    <li>
-                        <a href="languages" class=
-                        "nav__link--anchor 
+                        Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#languages" class="nav__link--anchor 
                         link__hover-effect
                         link__hover-effect--black">
-                    Languages</a>
-                    </li>
-                    <li>
-                        <a href="languages" class=
-                        "nav__link--anchor 
+                        Languages</a>
+                </li>
+                <li class="nav__link">
+                    <a href="mailto:samme1210@gmail.com" class="nav__link--anchor 
                         nav__link--anchor-primary">
-                    Contact</a>
-                    </li>
+                        Contact</a>
+                </li>
             </ul>
         </nav>
         <div class="flex flex-1">
@@ -43,22 +41,22 @@
                     <figure class="about-me__picture--mask">
                         <img src="./assets/me.jpg" class="about-me__picture" alt="Picture Of Me">
                     </figure>
-                    <h1>
-                        Hey! I'm <span class="text--purple">Sam Evans</span> 👋
+                    <h1 class="about-me__info--title">
+                        Hey! I'm <span class="text--highlight">Sam Evans</span>&nbsp;<span class="wave">👋</span>
                     </h1>
                     <p class="about-me__info--para">
                         I'm an enthusiastic <strong>frontend software engineer</strong>
                     </p>
 
-                    <div class="about-melink">
-                        <a class="about-me--links" href=""> <i class="fab fa-linkedin"></i> </a>
-                        <a class="about-me--links" href=""> <i class="fa-solid fa-envelope"></i> </a>
-                        <a class="about-me--links" href=""> <i class="fab fa-github"></i> </a>
-                        <a class="about-me--links" href=""> <i class="fa-solid fa-file-pdf"></i> </a>
+                    <div class="about-me--links">
+                        <a class="about-me--link" href=""> <i class="fab fa-linkedin"></i> </a>
+                        <a class="about-me--link" href=""> <i class="fa-solid fa-envelope"></i> </a>
+                        <a class="about-me--link" href=""> <i class="fab fa-github"></i> </a>
+                        <a href="./assets/Example Resume.pdf" target="_blank" class="about-me--link" href=""> <i class="fa-solid fa-file-pdf"></i> </a>
                     </div>
                 </div>
                 <figure class="about-me__img--container">
-                    <img src="/assets/undraw_websites.svg" class="about-me__img" alt="">
+                    <img src="assets/undraw_websites.svg" class="about-me__img" alt="">
                 </figure>
             </div>
         </div>
@@ -66,7 +64,7 @@
     <section id="languages">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">This Is My <span class="text--purple">Technology Stack</span></h1>
+                <h1 class="section__title">This Is My <span class="text--highlight">Technology Stack</span></h1>
                 <div class="lang__list">
                     <div class="lang">
                         <figure class="lang__img--wrapper">
@@ -124,17 +122,71 @@
     <section id="projects">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">These are <span class="text--purple"> My Projects</span></h1>
+                <h1 class="section__title">These are <span class="text--highlight"> My Projects</span></h1>
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
                             <img src="/assets/loopit.png" class="project__img" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">project title</h3>
+                                <h4 class="project__description--subtitle">
+                                    HTML, CSS, JAVASCRIPT
+                                </h4>
+                                <h4 class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque voluptas
+                                    temporibus itaque optio sint saepe nemo cupiditate mollitia accusantium?
+                                </h4>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/samme1210" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"> </i>
+                                    </a>
+                                    <a href="https://github.com/samme1210" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"> </i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="" alt="My Logo" class="footer__logo--img">
+                </figure>
+                <span class="footer__logo--popper">
+                    top 
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">Github
+                </a>
+                <a href="" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">Linkedin
+                </a>
+                <a href="mailto:samme1210@gmail.com" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">Email
+                </a>
+                <a href="assets/Example Resume.pdf" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">Resume
+                </a>
+            </div>
+            <div class="footer__copyright">Copyright Ⓒ 2022 Sam Evans </div>
+        </div>
+    </footer>
 </body>
-
+ 
 </html>
